@@ -183,3 +183,45 @@ img {
   width: 95%;
   height: auto;
 }
+
+/* Default link style */
+a {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.1s ease;
+}
+
+/* Hover (desktop users) */
+a:hover {
+  color: #333;
+}
+
+/* Active state (when clicked / tapped) */
+a:active {
+  color: #1a73e8; /* subtle professional blue */
+  transform: scale(0.97);
+}
+
+/* Focus state (keyboard + accessibility) */
+a:focus {
+  outline: none;
+  color: #1a73e8;
+}
+
+body.dark a {
+  color: #fff;
+}
+
+body.dark a:hover {
+  color: #ddd;
+}
+
+body.dark a:active,
+body.dark a:focus {
+  color: #8ab4f8;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
